@@ -21,6 +21,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 sh '''
+                cd myApp
                 python3 hello_world_cli.py
                 python3 hello_world_cli.py --name=Saeed
                 '''
