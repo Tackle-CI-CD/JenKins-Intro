@@ -9,7 +9,7 @@ pipeline {
                 sh '''
                     ./gradlew build
                     pwd
-                    ls
+                    ls build/libs/
                     java --version
                 '''
             }
