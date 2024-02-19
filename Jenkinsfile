@@ -1,12 +1,12 @@
 pipeline {
     agent any
+    tools {
+        gradle 'gradle-8.6'
+    }
     stages {
-        stage("Build java project") {
+        stage('Build java project') {
             steps {
-                echo 'Builing..'
-                withGradle() {
-                    sh './gradlew build'
-                }
+                sh 'gradle -v'
             }
         }
     }
