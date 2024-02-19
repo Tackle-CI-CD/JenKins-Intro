@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'docker-agent-alpine' }
     tools {
         gradle 'Gradle-8.6'
     }
