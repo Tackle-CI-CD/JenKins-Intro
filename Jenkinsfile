@@ -8,9 +8,7 @@ pipeline {
             steps {
                 sh '''
                     ./gradlew build
-                    pwd
-                    ls build/libs/
-                    java --version
+                    java -jar build/libs/JenKins-Intro.jar
                 '''
             }
         }
