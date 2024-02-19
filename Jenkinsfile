@@ -6,7 +6,10 @@ pipeline {
     stages {
         stage('Build java project') {
             steps {
-                sh './gradlew build'
+                sh '''
+                ./gradlew build
+                java -jar build/libs/Jenkins-Intro.jar
+                '''
             }
         }
     }
